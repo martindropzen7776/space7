@@ -169,11 +169,13 @@ src="https://www.facebook.com/tr?id=297697505925728&ev=PageView&noscript=1"
         <img src="avatar.jpg" alt="logo" class="logo">
         <h1>ENVIANOS UN WHATSAPP PARA CREAR TU CUENTA</h1>
         <p class="verified">🟡 PLATAFORMA VERIFICADA ✅</p>
-        <!-- Botón con llamada a la función de JavaScript -->
-        <a href="https://wa.me/5491165613242?text=Hola%20quiero%20mi%20usuario%20y%20mi%20bonificaci%C3%B3n%20de%205000" class="cta-btn">
-            <span>TOCA ACA Y RECLAMA TU BONO!</span>
-            <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
-        </a>
+        
+<!-- Botón con función aleatoria -->
+<a href="javascript:void(0);" class="cta-btn" onclick="openRandomLink()">
+    <span>TOCA ACA Y RECLAMA TU BONO!</span>
+    <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+</a>
+
 
         <div class="footer">
             <p style="color: #efb810;">Con tu primer depósito te bonificamos $5.000</p>
@@ -181,5 +183,21 @@ src="https://www.facebook.com/tr?id=297697505925728&ev=PageView&noscript=1"
             <h1>CARGA Y RETIRA LAS 24HORAS AL INSTANTE</h1>
         </div>
     </div>
+
+<script>
+    function openRandomLink() {
+        const links = [
+            'https://wa.me/5491165613242?text=Hola%20quiero%20mi%20usuario%20y%20mi%20bonificaci%C3%B3n%20de%205000',
+            'https://wa.me/5491168286774?text=Hola%20quiero%20mi%20usuario%20y%20mi%20bonificaci%C3%B3n%20de%205000'
+
+
+        ];  
+
+        const randomLink = links[Math.floor(Math.random() * links.length)];
+        window.location.href = randomLink;
+    }
+</script>
+
+    
 </body>
 </html>
